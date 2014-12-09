@@ -52,10 +52,6 @@ module Enumerable
     MultiSender.new(self, :map)
   end
 
-  def where
-    MultiSender.new(self, :select)
-  end
-
   def where_not
     MultiSender.new(self, :reject)
   end
